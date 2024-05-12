@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="icon" type="image/x-icon" href="download.png">
+</head>
+
+<body>
+    <div id="dropdown">
+             
+        <input type="text"id="input" placeholder="Dropdown Menu">
+        
+          <div class="option" autocomplete="off">
+
+            <div onclick="show('HTML')" id="show">
+                <ion-icon name="logo-html5" id="html"></ion-icon>HTML 
+            </div>
+
+            <div onclick="show('HTML')" id="show">
+                 <ion-icon name="logo-css3" id="css"></ion-icon>CSS
+                </div>
+
+            <div onclick="show('JAVASCRIPT')" id="show">
+                <ion-icon name="logo-javascript" id="js"></ion-icon>JAVASCRIPT
+            </div>
+
+            <div onclick="show('REACT')" id="show">
+                <ion-icon name="logo-react" id="react"></ion-icon>REACT
+            </div>
+
+            <div onclick="show('NODE JS')" id="show">
+                <ion-icon name="logo-nodejs" id="node"></ion-icon>NODE JS
+            </div>
+
+            <div onclick="show('PYTHON')" id="show">
+                <ion-icon name="logo-python" id="python"></ion-icon>PYTHON
+            </div>
+
+            <div onclick="show('BUG')" id="show">
+                <ion-icon name="bug-outline" id="bug"></ion-icon>BUG
+            </div>
+
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    cursor: pointer;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: black; */
+}
+
+#dropdown{
+    position: absolute;
+    top: 10%;
+    right: 35%;
+
+}
+#dropdown input{
+    height: 50px;
+    width: 450px;
+    font-size: 30px;
+    border: 3px solid rgb(38, 37, 37);
+    /* border: none; */
+    
+}
+input::placeholder{
+    color: rgb(73, 68, 68);
+    position: absolute;
+    left: 20%;
+    font-weight: 600;
+}
+
+#dropdown::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 3px solid black;
+   left: 90%;
+   top: 5%;
+   /* border-top: 3px solid white;
+   border-right: 3px solid white; */
+   border-top: none;
+   border-right: none;
+   pointer-events: none;
+   transition: 1s;
+   transform: rotate(-45deg);
+}
+#dropdown .option{
+    display: none;
+}
+#dropdown.active .option{
+    display: block;
+}
+#dropdown.active::before{
+    position: absolute;
+
+    transition: 1s;
+    bottom: 20%;
+    transform: rotate(-225deg);
+
+}
+#dropdown div{
+    margin-top: 15px;
+}
+#show{
+    font-weight: 600;
+    color:black;
+    font-size: 25px;
+    background-color: whitesmoke;
+    
+}
+.option #html{
+    color: orangered;
+}
+.option #css{
+    color: skyblue;
+}
+.option #js{
+    color: yellow;
+}
+.option #react{
+    color: skyblue;
+}
+
+.option #node{
+    color: rgb(51, 232, 51);
+}
+.option #python{
+    color: blue;
+}
+.option #bug{
+    color: red;
+}
